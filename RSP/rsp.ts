@@ -6,10 +6,13 @@ interface RSP {
 } // interface 에 readonly 쓰면 변수에 as const 쓰는거와 같음
 
 interface RSP {
-  readonly PAPER: "-284px"; // 똑같은 이름으로 또 만들어도 나중에 합쳐진다. 상속받을땐 extends
+  readonly PAPER: "-284px"; // 똑같은 이름으로 또 만들어도 나중에 합쳐진다.
+}
+
+interface Example extends RSP {
+  // RSP 들이 이쪽으로 상속된다.
 }
 //type alias = {} type과 interface는 합쳐지지 않아.
-
 const rsp: RSP = {
   ROCK: "0",
   SCISSORS: "-142px",
@@ -96,13 +99,13 @@ const he12llo: Hello = {
   SCISSORS: 1,
 };
 
-interface Example {
+interface Example3 {
   a: 3;
   b: 7;
   [key: string]: number;
 }
 
-const example: Example = {
+const example3: Example3 = {
   a: 3,
   b: 7,
   d: 1,
