@@ -104,7 +104,6 @@ interface Example3 {
   b: 7;
   [key: string]: number;
 }
-
 const example3: Example3 = {
   a: 3,
   b: 7,

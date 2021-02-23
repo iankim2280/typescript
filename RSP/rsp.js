@@ -66,7 +66,7 @@ document.querySelectorAll(".btn").forEach((btn) => {
 let start = 3;
 const interval2 = setInterval(function () {
     if (start === 0) {
-        console.log("종료!!!");
+        console.log("done!!!");
         return clearInterval(interval2);
     }
     console.log(start);
@@ -77,7 +77,7 @@ const he12llo = {
     ROCK: "a",
     SCISSORS: 1,
 };
-const example = {
+const example3 = {
     a: 3,
     b: 7,
     d: 1,
