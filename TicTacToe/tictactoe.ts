@@ -54,6 +54,8 @@ const callback = (e: MouseEvent) => {
           cell.textContent = "";
         });
       });
+      count = 0;
+      console.log(count);
     } else if (count === 9) {
       result.textContent = `Draw!`;
       turn = "X";
@@ -62,6 +64,8 @@ const callback = (e: MouseEvent) => {
           cell.textContent = "";
         });
       });
+      count = 0;
+      console.log(count);
     } else {
       turn = turn === "O" ? "X" : "O";
     }
